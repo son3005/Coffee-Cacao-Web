@@ -1,0 +1,36 @@
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+}
+.post-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.post-time {
+  font-size: 0.9rem;
+  color: gray;
+}
+.post-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.post-card {
+  margin-bottom: 24px;
+}
+
+.post-img {
+  width: 100%;
+  /* Có thể đặt chiều cao cố định cho các ô nhỏ để chúng đều nhau */
+  /* height: 180px; /* Ví dụ */
+  object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+}
+.post-card {
+  /* Đảm bảo mỗi card có chiều cao đồng nhất nếu cần */
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Giúp card co dãn đều trong hàng */
+}
+.post-card .card-body {
+  flex-grow: 1; /* Đảm bảo body chiếm hết không gian còn lại */
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <title>Thanh Hai Coffee</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/style_general.css" />
+  <link rel="stylesheet" href="css/style_index.css" />
+</head>
+
+<body>
+  <!-- Navbar với logo, menu và thanh tìm kiếm -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar_modified sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="picture/logo.png" alt="Logo" class="logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav"> <!-- ✅ ID trùng khớp -->
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Trang chủ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cafe.html">Cà phê</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="drink.html">Cacao</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Đăng nhập</a>
+          </li>
+        </ul>
+        <form class="d-flex ms-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search" />
+          <button class="btn btn-outline-light" type="submit">Tìm</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--Carousel-->
+  <div class="container my-4">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="picture/banner1.jpg" class="d-block w-100" alt="Carousel 1" />
+        </div>
+        <div class="carousel-item">
+          <img src="Picture/banner2.jpg" class="d-block w-100" alt="Carousel 2" />
+        </div>
+        <div class="carousel-item">
+          <img src="Picture/banner3.jpg" class="d-block w-100" alt="Carousel 3" />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-- Giới thiệu về thế giới cà phê -->
+  <div class="containe bg-light py-5">
+    <h2 class="text-center mb-5" style="font-family: serif; font-weight: 600; text-transform: uppercase">
+      GIỚI THIỆU VỀ THẾ GIỚI CÀ PHÊ
+    </h2>
+    <div class="row mb-3">
+      <div class="col-lg-6">
+        <img src="picture/gioithieu_1.jpg" alt="picture introduction 1" class="img-fluid img-scale mb-3" />
+      </div>
+      <div class="col-lg-6">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni tempore a ullam aliquam quod, ipsa commodi,
+          possimus beatae corporis ex est dolorum. Deleniti culpa voluptas iste voluptatibus accusamus pariatur
+          asperiores!</p>
+      </div>
+    </div>
+  </div>
+  <!-- Blog cà phê -->
+  <div class="container py-5 bg-light">
+    <h2 class="text-center mb-5" style="font-family: serif; font-weight: 600; text-transform: uppercase">
+      THẾ GIỚI CAFE
+    </h2>
+    <!-- Blog về cà phê -->
+    <div class="row mb-3">
+      <div class="col-lg-6 d-flex flex-column">
+        <div class="card h-100 border-1">
+          <img src="picture/gt1.jpg" alt="Giới thiệu 1" class="card-img-top" />
+          <div class="card-body position-relative">
+            <h4 class="card-title">Cà phê Arabica</h4>
+            <small class="post-time">Oct 31 - 02:44 PM</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="row h-100 mb-2">
+          <div class="col-md-6 mb-2 d-flex">
+            <div class="card w-100">
+              <img src="picture/gt2.jpg" alt="" class="card-img-top" />
+              <div class="card-body">
+                <h4 class="card-title">Cabuchino lalalilo</h4>
+                <small class="post-time">Oct 31 - 02:44 PM</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2 d-flex">
+            <div class="card w-100">
+              <img src="picture/gt3.jpg" alt="" class="card-img-top" />
+              <div class="card-body">
+                <h4 class="card-title">Tung tung Sahu</h4>
+                <small class="post-time">Oct 31 - 02:44 PM</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex">
+            <div class="card w-100">
+              <img src="picture/gt4.jpg" alt="" class="card-img-top" />
+              <div class="card-body">
+                <h4 class="card-title">Salalila dubaduba</h4>
+                <small class="post-time">Oct 31 - 02:44 PM</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex">
+            <div class="card w-100">
+              <img src="picture/gt5.png" alt="" class="card-img-top" />
+              <div class="card-body">
+                <h4 class="card-title">Nhacatabasidachita bacabibo</h4>
+                <small class="post-time">Oct 31 - 02:44 PM</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer nè -->
+    <footer class="text-white text-center py-3" style="background-color: #674924">
+      <p>&copy; 2025 Cafe.net.vn. All rights reserved.</p>
+    </footer>
+
+    <!--Nhúng js vào -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

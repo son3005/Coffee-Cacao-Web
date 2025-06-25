@@ -1,0 +1,24 @@
+.card-title {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    /* Bold */
+    font-size: 40px;
+    /* Kích thước tên sản phẩm */
+    color: black margin-bottom: 5px;
+}
+
+.card-text {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    /* Cùng font nhưng mỏng hơn */
+    font-weight: 600;
+    /* Medium */
+    font-size: 25px;
+    color: red
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

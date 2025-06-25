@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <title>Đăng nhập</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style_general.css" />
+    <link rel="stylesheet" href="css/style_login.css" />
+  </head>
+  <body>
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar_modified">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="picture/logo.png" alt="Logo" class="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cafe.html">Cà phê</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="drink.html">Cacao</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Đăng nhập</a>
+            </li>
+          </ul>
+          <form class="d-flex ms-3" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Tìm kiếm"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">Tìm</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Form Đăng nhập đồ nè -->
+    <section
+      class="container py-5 border rounded mt-3"
+      style="background-color: rgba(248, 249, 250, 0.7)"
+    >
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <h2 class="text-center mb-4">Đăng nhập</h2>
+          <form>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Nhập email"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Mật khẩu:</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Nhập mật khẩu"
+              />
+            </div>
+            <div class="row justify-content-center mb-1">
+              <div class="col-md-8 mb-3">
+                <button type="submit" class="btn btn-primary w-100">
+                  Đăng nhập
+                </button>
+              </div>
+              <div class="col-md-4">
+                <button type="#" class="btn bg-warning text-center w-100">
+                  Đăng ký
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!--Nhúng js vào -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
