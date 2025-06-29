@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Danh sách sinh viên</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 80%;
+        margin: 20px auto;
+      }
+      th,
+      td {
+        border: 1px solid #666;
+        padding: 8px;
+        text-align: center;
+      }
+      th {
+        background-color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center">Danh sách sinh viên</h2>
+    <table id="bangSinhVien">
+      <thead>
+        <tr>
+          <th>MSSV</th>
+          <th>Họ tên</th>
+          <th>SĐT</th>
+          <th>Địa chỉ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Dữ liệu sẽ được chèn ở đây bằng JS -->
+      </tbody>
+    </table>
+
+    <script>
+      fetch("php/get_data.php")
+        .then((response) => response.json())
+        .then((data) => {
+          const tbody = document.querySelector("#bangSinhVien tbody");
+          data.forEach((row) => {
+            const tr = document.createElement("tr");
+            tr.innerHTML = `
+                        <td>${row.MSSV}</td>
+                        <td>${row.HOTEN}</td>
+                        <td>${row.SDT}</td>
+                        <td>${row.DIACHI}</td>
+                    `;
+            tbody.appendChild(tr);
+          });
+        })
+        .catch((error) => {
+          console.error("Lỗi khi tải dữ liệu:", error);
+        });
+    </script>
+  </body>
+</html>
